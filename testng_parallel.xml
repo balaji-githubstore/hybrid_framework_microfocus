@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenEMR Suite" thread-count="2" parallel="tests">
+    <test name="Login UI Test - Edge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.excelr.test.LoginUserInterfaceTest"/>
+        </classes>
+    </test>
+
+    <test name="Login UI Test - Chrome">
+        <parameter name="browser" value="ff"></parameter>
+        <classes>
+            <class name="com.excelr.test.LoginUserInterfaceTest"/>
+        </classes>
+    </test>
+
+</suite>

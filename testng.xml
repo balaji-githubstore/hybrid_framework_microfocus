@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenEMR Suite">
+
+    <parameter name="browser" value="edge"></parameter>
+
+    <test verbose="2" preserve-order="true"
+          name="Login UI Test">
+        <classes>
+            <class name="com.excelr.test.LoginUserInterfaceTest">
+                <methods>
+                    <include name="validateTitleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
